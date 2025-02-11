@@ -1,0 +1,32 @@
+body{
+    margin: 0 auto;
+    font-family: lato;
+    background-color: #f1f1f1;
+    color: #0f0f0f;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.container {
+    width: 1200px;
+
+}
+
+.header {
+    text-align: center;
+    padding: 10px;
+    font-weight: 900;
+    font-size: 4rem;
+}
+
+.header-image {
+    background-size: cover;
+    background-position: center;
+    height: 400px; /* increase this if you want a taller image */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #f1f1f1; /* add this for dark background */
+}
