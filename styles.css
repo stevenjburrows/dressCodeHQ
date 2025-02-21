@@ -1,7 +1,7 @@
 body{
     margin: 0 auto;
     font-family: lato;
-    background-color: #f1f1f1;
+    background-color: #FDFAE9;
     color: #0f0f0f;
     display: flex;
     flex-direction: column;
@@ -21,6 +21,66 @@ body{
     font-size: 4rem;
 }
 
+.side-by-side {
+    display: flex;
+    margin-top: 1em;
+    gap: 1em;
+    align-items: center;
+}
+
+.side-by-side div {
+    width: 50%;
+    font-size: large;
+    
+}
+
+.side-by-side img {
+    width: 50%;
+    border-radius: 2em;
+}
+.link-div {
+    display: flex;
+    gap: 3em;
+    justify-content: center;
+    margin-top: 2em;
+    min-width: 100%;
+    align-items: center;
+
+}
+
+.button-link {
+    background-color: #C82619;
+    padding: 0.5em 1em;
+    border-radius: 2em;
+    text-decoration: none;
+    color: #FDFAE9;
+    transition: transform .2s; /* Animation */
+}
+
+.button-link:hover {
+    background-color: #FDFAE9;
+    color: #C82619;
+    border: 2px solid #C82619;
+    transform: scale(1.1);
+}
+
+.outline-button {
+    padding: 0.5em 1em;
+    border-radius: 2em;
+    text-decoration: none;
+    color: #C82619;
+    border-width: 2px;
+    border-color: #C82619;
+    border-style: solid;
+    transition: transform .2s; /* Animation */
+}
+
+.outline-button:hover {
+    background-color: #C82619;
+    color: #FDFAE9;
+    transform: scale(1.1);
+}
+
 .header-image {
     background-size: cover;
     background-position: center;
@@ -28,13 +88,16 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #010101; 
+    color: #C82619; 
+    background-image: url("images/hero-ice-cream.jpg");
+    border-radius: 2em;
 }
 
 .parallax {
+    margin-top: 2em;
     position: relative;
     height: 80vh;
-    background: url('images/parallax.jpg') no-repeat center center/cover;
+    background: url('images/choc-ice-cream.jpg') no-repeat center center/cover;
     background-attachment: fixed;
 }
 
@@ -42,7 +105,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 4rem;
+    font-size: 6rem;
     height: 100%;
     font-weight: 900;
     color: #f1f1f1; /* add this for dark background */
@@ -54,3 +117,36 @@ body{
     align-items: center;
     width: 100%;
 }
+
+.list-border {
+    border: 2px solid #91C6CD;
+    border-radius: 2em;
+    padding: 1em;
+    height: 20em;
+}
+
+
+.flavours-list {
+    margin-top: 2em;
+    font-size: xx-large;
+    list-style-image: url("images/ice-cream-solid.svg");   
+    background: linear-gradient(135deg, #FFB6C1, #FFD700, #ADD8E6);
+    background-size: 400% 400%;
+    animation: gradientAnimation 6s ease infinite;
+
+    padding: 2em 0;
+}
+
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.flavours-list ul {
+    display: flex;
+    gap: 4em;
+    justify-content: center;
+    align-items: center;
+}
+
