@@ -1,6 +1,6 @@
 body{
     margin: 0 auto;
-    font-family: lato;
+    font-family: lato, Arial, sans-serif;;
     background-color: #FDFAE9;
     color: #0f0f0f;
     display: flex;
@@ -19,6 +19,7 @@ body{
     padding: 10px;
     font-weight: 900;
     font-size: 4rem;
+    font-family: Merriweather, 'Franklin Gothic Medium', Arial, sans-serif;
 }
 
 .side-by-side {
@@ -32,6 +33,14 @@ body{
     width: 50%;
     font-size: large;
     
+}
+
+.flex-text {
+    padding: 0.5em;;
+}
+
+.flex-image{
+    border: #91C6CD solid 2px;
 }
 
 .side-by-side img {
@@ -131,17 +140,10 @@ body{
     font-size: xx-large;
     list-style-image: url("images/ice-cream-solid.svg");   
     background: linear-gradient(135deg, #FFB6C1, #FFD700, #ADD8E6);
-    background-size: 400% 400%;
-    animation: gradientAnimation 6s ease infinite;
-
     padding: 2em 0;
+
 }
 
-@keyframes gradientAnimation {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
-}
 
 .flavours-list ul {
     display: flex;
@@ -150,3 +152,7 @@ body{
     align-items: center;
 }
 
+.rotated-image{
+    transform: rotate(90deg) translateY(-50%);
+    transform-origin: center;
+}
